@@ -367,7 +367,7 @@ app.get("/", async (req, res) => {
   res.send(document(rigs));
 });
 
-app.use(express.static(path.resolve(__dirname, ".", "assets")));
+app.use(express.static(path.join(__dirname, ".", "assets")));
 
 const port = process.env.PORT || 3000;
 app.listen(port);

@@ -12,7 +12,7 @@ const config: webpack.Configuration = {
     target: 'node',
     externals: [nodeExternals()],
     output: {
-        path: path.resolve(__dirname, "dist"),
+        path: path.join(__dirname, "."),
         filename: "[name].js",
     },
     module: {
