@@ -9,6 +9,8 @@ services:
     env_file:
       - .env
     environment:
+      - TZ=Asia/Tokyo
+      - LANG=ja_JP.UTF-8
       - PORT=8080
     ports:
       - 8080:8080
