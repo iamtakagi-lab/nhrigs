@@ -9,7 +9,7 @@ if (!process.env.NICEHASH_ORG_ID) throw new Error("NICEHASH_ORG_ID is not set");
 import axios, { AxiosError } from "axios";
 import { createHmac, randomBytes } from "crypto";
 import express from "express";
-import { join } from "path";
+import path, { join } from "path";
 import { stringify } from "querystring";
 import { name as APP_NAME, version as APP_VERSION } from "./package.json";
 
@@ -170,6 +170,11 @@ const document = (rigs: NicehashRigs.RootObject) => `
       property="og:description"
       content="お使いのグラフィックボードはピッケルです"
     />
+    <meta
+      property="og:image"
+      content="https://nhrigs.iamtakagi.net/ogp.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
     <style>
       h1 {
         font-size: 1.8rem;
@@ -361,6 +366,8 @@ app.get("/", async (req, res) => {
   res.set("Content-Type", "text/html");
   res.send(document(rigs));
 });
+
+app.use(express.static(path.resolve(__dirname, ".", "assets")));
 
 const port = process.env.PORT || 3000;
 app.listen(port);
