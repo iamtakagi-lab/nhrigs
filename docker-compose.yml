@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  app:
+    container_name: nhrigs
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    environment:
+      - PORT=8080
+    ports:
+      - 8080:8080
