@@ -172,7 +172,7 @@ const document = (rigs: NicehashRigs.RootObject) => `
     />
     <meta
       property="og:image"
-      content="https://nhrigs.iamtakagi.net/ogp.jpg"
+      content="https://nhrigs.iamtakagi.net/ogp.png"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <style>
