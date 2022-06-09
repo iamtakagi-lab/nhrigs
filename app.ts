@@ -195,8 +195,7 @@ const document = (rigs: NicehashRigs.RootObject) => `
           new Date(
             new Date(rigs.lastPayoutTimestamp).getTime() +
               (new Date().getTimezoneOffset() + 9 * 60) * 60 * 1000
-          ) /*
-        日本時間にする */
+          ) /* JST */
         }</span
       >
       <span
@@ -204,8 +203,7 @@ const document = (rigs: NicehashRigs.RootObject) => `
           new Date(
             new Date(rigs.nextPayoutTimestamp).getTime() +
               (new Date().getTimezoneOffset() + 9 * 60) * 60 * 1000
-          ) /*
-        日本時間にする */
+          ) /* JST */
         }</span
       >
       <span>有効なデバイス数: ${rigs.totalDevices}</span>

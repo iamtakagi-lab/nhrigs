@@ -2,6 +2,7 @@ version: '3.8'
 services:
   app:
     container_name: nhrigs
+    image: ghcr.io/iamtakagi/nhrigs:latest
     build: 
       context: .
       dockerfile: Dockerfile
