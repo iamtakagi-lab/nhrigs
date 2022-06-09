@@ -185,7 +185,7 @@ const document = (rigs: NicehashRigs.RootObject) => `
   <body>
     <nav>
       <h1 style="margin: 0;">nhrigs</h1>
-      <span>NiceHash の採掘状況とかを見れるやつ</span>
+      <span>NiceHash の採掘状況とか見れるやつ</span>
       <hr style="margin-top: 1.2rem; margin-bottom: 1.2rem"" />
     </nav>
     <main>
@@ -206,8 +206,8 @@ const document = (rigs: NicehashRigs.RootObject) => `
           ) /* JST */
         }</span
       >
-      <span>有効なデバイス数: ${rigs.totalDevices}</span>
       <span>有効なリグ数: ${rigs.totalRigs}</span>
+      <span>有効なデバイス数: ${rigs.totalDevices}</span>
       <span>BTC Address: ${rigs.btcAddress}</span>
         ${rigs.miningRigs
           .map((rig) => {
