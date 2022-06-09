@@ -223,8 +223,8 @@ const document = (rigs: NicehashRigs.RootObject) => `
           ) /* JST */
         }</span
       >
-      <span>有効なリグ数: ${rigs.totalRigs}</span>
-      <span>有効なデバイス数: ${rigs.totalDevices}</span>
+      <span>有効リグ数: ${rigs.totalRigs}</span>
+      <span>有効デバイス数: ${rigs.totalDevices}</span>
       <span>BTC Address: ${rigs.btcAddress}</span>
         ${rigs.miningRigs
           .map((rig) => {
