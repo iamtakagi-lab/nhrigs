@@ -158,6 +158,18 @@ const document = (rigs: NicehashRigs.RootObject) => `
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>nhrigs</title>
+    <meta
+      property="description"
+      content="お使いのグラフィックボードはピッケルです"
+    />
+    <meta
+      property="og:title"
+      content="nhrigs"
+    />
+    <meta
+      property="og:description"
+      content="お使いのグラフィックボードはピッケルです"
+    />
     <style>
       h1 {
         font-size: 1.8rem;
