@@ -235,7 +235,7 @@ const document = (rigs: NicehashRigs.RootObject) => `
             <span>Miner Status: ${rig.minerStatus}</span>
             <span>CPU Exists: ${rig.cpuExists}</span>
             <span>CPU Mining Enabled: ${rig.cpuMiningEnabled}</span>
-            <span>Software Version: ${rig.softwareVersions}</span>
+            <span>Software Versions: ${rig.softwareVersions}</span>
             <span>未払いマイニング報酬: ${rig.unpaidAmount} BTC</span>
             <span>アルゴリズム: ${rig.stats[0] ? rig.stats[0].algorithm.description : ""}</span>
           </div>
