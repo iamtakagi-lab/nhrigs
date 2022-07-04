@@ -1,7 +1,7 @@
 # nhrigs
 
 ```console
-$ docker-compose up -d
+docker-compose up -d
 ```
 
 ## LICENSE
